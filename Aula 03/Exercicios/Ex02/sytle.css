@@ -1,0 +1,31 @@
+header {
+  background-color: #f0f4f8;
+  text-align: center;
+  color: black;
+}
+
+header p {
+  text-align: center;
+}
+h2 {
+  color: #627d98;
+}
+h3 {
+  color: #627d98;
+}
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+#secao-linhagem-rust p {
+  color: #829ab1;
+}
+
+#secao-inteligencia-artificial p {
+  color: #9db2a2;
+}
+
+footer p {
+  color: #243b53;
+  text-align: center;
+}

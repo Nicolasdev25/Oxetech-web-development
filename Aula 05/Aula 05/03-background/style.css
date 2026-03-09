@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    height: 100vh;
+    background-color: #ccc;
+    
+}
+
+.alt-background{
+    background-color: #aaa;
+}
+
+#img-background {
+    background-image: url("./images/background-01-large.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center ;
+    background-size: cover;
+    
+}
+
+#parallax-background{
+    background-image: url(./images/background-02.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#gradient-background{
+    background-image: linear-gradient(to right, #dbdbdb 0%, #b3b3b3 50%, #858585 100%);/* direção, cor1, cor2*/
+}
+
+#shorthand-background{
+    background: #aaa url("./images/background-03.jpg") bottom center / cover no-repeat scroll;
+}

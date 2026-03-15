@@ -9,7 +9,6 @@ body {
   font-size: 14px;
   height: 100vh;
   font-family: "inter", sans-serif;
- 
 }
 
 .profile-card {
@@ -32,19 +31,17 @@ body {
   width: 112px;
   border-radius: 50%;
 }
-.profile-img-texts h1 {
+.name-titulo {
   margin-top: 10px;
   padding-bottom: 10px;
 }
-.profile-img-texts h2 {
+.sub-titulo {
   color: hsl(75, 94%, 57%);
   padding-bottom: 10px;
   font-size: 15px;
 }
-.profile-img-texts p {
+.edit-paragrafo {
   padding-top: 20px;
-
-
 }
 
 ul {
@@ -68,10 +65,9 @@ a {
   color: white;
 }
 
-li:hover{
+li:hover {
   background-color: hsl(75, 94%, 57%);
-  
 }
-a:hover{
+a:hover {
   color: #1f1f1f;
 }

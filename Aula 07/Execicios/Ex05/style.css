@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  padding: 20px;
+}
+
+header,
+footer {
+  background-color: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+t/ section h3 {
+  text-align: center;
+  margin: 30px 0 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1100px;
+}
+
+/* Cabeçalho */
+thead th {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tbody th {
+  background-color: #ffffff;
+  color: #000;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tfoot td {
+  background-color: #d1e3f8;
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #1e3c72;
+  border-radius: 10px;
+}
+.col-regiao {
+  width: 180px;
+}
+
+.col-dados {
+  min-width: 120px;
+}

@@ -1,0 +1,30 @@
+/* Largura da tela for maior que 768px */
+
+
+/* largura entre [481, 768]px */
+
+
+/* largra entre [0,480]px */
+
+
+
+
+/*max-width: para largura de tela ate (teto)*/
+/*min-width: para largura de tela maior que (piso) */
+
+body{
+    background-color: lightblue; 
+}
+
+@media ((min-width:480px) and (max-width: 768px)) {
+    body{
+        background-color:lightgreen;
+    }
+}
+
+
+@media (min-width:768px){
+    body{
+        background-color:lightcoral;
+    }
+}

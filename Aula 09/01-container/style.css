@@ -1,0 +1,14 @@
+.container{
+    background-color: #add8e6;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 200px;
+    align-content: space-between;
+}
+
+.item{
+    border: 1px solid #00008b;
+    background-color: #5e8eef;
+    padding: 10px;
+}

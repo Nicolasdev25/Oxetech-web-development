@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "lexend Deca" sans-serif;
+  font-family: "lexend Deca", sans-serif;
   background-color: var(--Gray100);
   display: flex;
   justify-content: center;
@@ -81,4 +81,34 @@ p {
 }
 .botao-luxury {
   color: var(--Green950);
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    flex-direction: row; /* Coloca um ao lado do outro */
+    max-width: 920px; /* Aumenta a largura total para caber os 3 cards */
+    border-radius: 8px; /* Garante o arredondamento geral */
+  }
+
+  .card {
+    flex: 1; 
+    min-height: 500px; 
+  }
+
+  /* Ajuste das bordas para o formato horizontal */
+  .coluna-sedans {
+    border-radius: 8px 0 0 8px; 
+  }
+
+  .coluna-suvs {
+    border-radius: 0; 
+  }
+
+  .coluna-luxury {
+    border-radius: 0 8px 8px 0; /
+  }
+
+  .botao {
+    margin-top: auto;
+  }
 }

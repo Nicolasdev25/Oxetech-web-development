@@ -1,0 +1,87 @@
+:root {
+  --Blue500: hsl(215, 51%, 70%);
+  --Cyan400: hsl(178, 100%, 50%);
+
+  --Blue950: hsl(217, 54%, 11%);
+  --Blue900: hsl(216, 50%, 16%);
+  --Blue800: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Blue950);
+  font-family: "Outfit", sans-serif; /* Fonte comum para esse desafio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: var(--Blue900);
+  padding: 24px;
+  border-radius: 15px;
+  max-width: 320px; /* Evita que o card cresça demais */
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.main-img {
+  width: 100%; /* Ocupa toda a largura do card */
+  border-radius: 8px;
+}
+
+h2 {
+  color: var(--White);
+  font-size: 22px;
+  margin: 20px 0 12px;
+}
+
+p {
+  color: var(--Blue500);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+.price {
+  color: var(--Cyan400);
+}
+.time-left {
+  color: var(--Blue500);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #2e445e;
+  margin: 18px 0;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+}
+
+.avatar {
+  width: 33px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+}
+
+.author span {
+  color: var(--White);
+}

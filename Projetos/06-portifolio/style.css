@@ -28,8 +28,13 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--fundo-principal);
 }
 
 .header{
@@ -89,6 +94,7 @@ body{
   justify-content: center;
   gap: 3rem;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 .nav-mobile button{
@@ -195,16 +201,17 @@ img{
   border-radius: 10px;
   margin-bottom: 1rem;
   box-shadow: var(--sombra);
+  scroll-margin-top: 70px;
 }
 
 .profile__content h2{
   color: var(--destaque-principal);
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem; */
 }
 
 .profile__content h3{
   color: var(--destaque-secundario);
-  margin: 1rem 0;
+  /*margin: 1rem 0; */
 
 }
 
@@ -248,12 +255,11 @@ img{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* obs */
+  flex:1;
 }
 .profile-skills__label i {
   color: var(--destaque-principal);
 }
-
 
 .profile-skills__progress{
   display: flex;
@@ -274,4 +280,171 @@ img{
 .profile-skills__progress-fill {
   background-color: var(--destaque-secundario);
   height: 100%;
+}
+
+.profile-education__item {
+  margin: 1rem 0;
+}
+
+.profile-education__item{
+  border: var(--borda);
+  padding: 1rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--destaque-principal);
+  transition: border-width 0.2s;
+}
+
+.profile-education__item:hover{
+  border-left-width:6px ;
+}
+
+.profile-projects__grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.profile-projects__item {
+  border: var(--borda);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  box-shadow: var(--sombra-card);
+}
+
+.profile-projects__image img{
+  border-radius: 8px;
+}
+
+.profile-projects__tech-list{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.profile-projects__tech-list li{
+  background-color: var(--destaque-secundario);
+  padding: .5rem;
+  color: #fff;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+.profile-projects__tech-list li:hover{
+  background-color: var(--destaque-principal);
+}
+
+
+
+.profile-projects__links{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.profile-projects__links a{
+  text-decoration: none;
+  color: var(--destaque-principal);
+}
+
+.profile-projects__links a:hover{
+  text-decoration: underline;
+  color: var(--destaque-secundario);
+}
+
+
+.profile-contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.entry-group{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.entry-group__label{
+  font-weight: bold;
+  color: var(--destaque-secundario);
+  font-size: 1rem;
+}
+.entry-group__input{
+  width:100%;
+  background-color: var(--fundo-principal);
+  border-radius: 6px;
+  padding: 0.8rem;
+  resize: none;
+  outline: none;
+  color: var(--texto-secundario);
+  border: 1px solid transparent;
+  transition: border-color 0.4s, box-shadow 0.4s;
+}
+.entry-group__input:focus{
+  border-color: var(--destaque-secundario);
+  box-shadow: 0 0 6px var(--destaque-secundario);
+}
+
+.profile-contact__button {
+  align-self: center;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--destaque-secundario);
+  color: #fff;
+  border:none;
+  cursor:pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.profile-contact__button:hover{
+ background-color: var(--destaque-principal);
+}
+
+footer{
+  background-color: var(--destaque-principal);
+  color: var(--branco);
+  padding: 1rem;
+  text-align: center;
+}
+
+@media(min-width: 1024px){
+  #btn-open{
+    display: none;
+    
+  }
+
+  .header__nav{
+    display:flex;
+    gap: 1.5rem;
+  }
+
+  .profile__grid{
+    grid-template-columns: 15px 350px 1fr 15px;
+  }
+  .profile__sidebar {
+    position: sticky;
+    top:70px;
+    height: 650px;
+  }
+
+  .profile__content {
+    grid-row: 1 / 2;
+    grid-column: 3/4;
+  }
+
+  .profile-skills__container{
+    flex-direction: row;
+  }
+
+  .profile-projects__grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-mobile.show{
+    display: none;
+  }
 }
